@@ -199,7 +199,7 @@ class _HomeState extends State<Home> {
                             width: 1000,
                             child: Card(
                               elevation: 3.0,
-                              color: Hexcolor('#F58650'),
+                              color: Hexcolor('#3E3A3D'),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
@@ -232,7 +232,7 @@ class _HomeState extends State<Home> {
                                     child: Align(
                                       alignment: Alignment.bottomRight,
                                       child: RaisedButton(
-                                        color: Hexcolor('#EC4B5C'),
+                                        color: Hexcolor('#F9C067'),
                                         elevation: 3.0,
                                         child: Text(
                                           'View Source',
