@@ -179,7 +179,7 @@ class _HomeState extends State<Home> {
                       children: <Widget>[
                         Container(
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(20, 120, 0, 0),
+                            padding: const EdgeInsets.fromLTRB(180, 120, 0, 0),
                             child: Container(
                               height: 540.0,
                               width: 270.0,
@@ -206,7 +206,7 @@ class _HomeState extends State<Home> {
                                   Padding(
                                     padding: const EdgeInsets.all(20.0),
                                     child: Text(
-                                      'Watered',
+                                      'News For Covid',
                                       style: TextStyle(
                                         fontFamily: 'Poppins',
                                         color: Colors.white,
@@ -218,7 +218,7 @@ class _HomeState extends State<Home> {
                                     padding:
                                         const EdgeInsets.fromLTRB(20, 5, 20, 0),
                                     child: Text(
-                                      'Watered is an app, which monitors water usage and leakages in your daily household. It also calls nearby plumbers and show their last seen and how far they are, from your current location. It also provides an awareness feature, where users can read about how they can save Earth\'s resources and also donate for the cause.',
+                                      'This app helps providing only adequate news required regarding the pandemic of Corona-Virus. It covers all sectors of business, stocks, health and much more. This app provides only news regarding COVID\'s impact on these sectors with the help of NewsApi, an open source news API and with a personalized dashboard, users can update their preferences. ',
                                       style: TextStyle(
                                         fontFamily: 'Poppins',
                                         fontSize: 25,
@@ -242,9 +242,9 @@ class _HomeState extends State<Home> {
                                         ),
                                         onPressed: () async {
                                           if (await canLaunch(
-                                              "https://github.com/ameysunu/watered.git")) {
+                                              "https://github.com/ameysunu/newsforcovid.git")) {
                                             await launch(
-                                                "https://github.com/ameysunu/watered.git");
+                                                "https://github.com/ameysunu/newsforcovid.git");
                                           }
                                         },
                                       ),
