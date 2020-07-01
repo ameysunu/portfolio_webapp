@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
               Container(
                 color: Hexcolor('#E67DDB'),
                 width: double.infinity,
-                height: 800,
+                height: 2000,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -103,6 +103,7 @@ class _HomeState extends State<Home> {
                             height: 400,
                             width: 1000,
                             child: Card(
+                              elevation: 3.0,
                               color: Hexcolor('#F58650'),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,9 +131,11 @@ class _HomeState extends State<Home> {
                                       ),
                                     ),
                                   ),
-                                  Center(
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                                    child: Align(
+                                      alignment: Alignment.bottomRight,
                                       child: RaisedButton(
                                         color: Hexcolor('#EC4B5C'),
                                         elevation: 3.0,
@@ -166,6 +169,88 @@ class _HomeState extends State<Home> {
                               image: DecorationImage(
                                 image: AssetImage('images/watered.png'),
                                 fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(20, 120, 0, 0),
+                            child: Container(
+                              height: 540.0,
+                              width: 270.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('images/newsforcovid.png'),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(30, 20, 20, 20),
+                          child: SizedBox(
+                            height: 400,
+                            width: 1000,
+                            child: Card(
+                              elevation: 3.0,
+                              color: Hexcolor('#F58650'),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Text(
+                                      'Watered',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        color: Colors.white,
+                                        fontSize: 40,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 5, 20, 0),
+                                    child: Text(
+                                      'Watered is an app, which monitors water usage and leakages in your daily household. It also calls nearby plumbers and show their last seen and how far they are, from your current location. It also provides an awareness feature, where users can read about how they can save Earth\'s resources and also donate for the cause.',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 25,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                                    child: Align(
+                                      alignment: Alignment.bottomRight,
+                                      child: RaisedButton(
+                                        color: Hexcolor('#EC4B5C'),
+                                        elevation: 3.0,
+                                        child: Text(
+                                          'View Source',
+                                          style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.white),
+                                        ),
+                                        onPressed: () async {
+                                          if (await canLaunch(
+                                              "https://github.com/ameysunu/watered.git")) {
+                                            await launch(
+                                                "https://github.com/ameysunu/watered.git");
+                                          }
+                                        },
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
