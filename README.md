@@ -1,6 +1,6 @@
 # webapp
 
-A new Flutter project.
+My portfolio for my website on Flutter WebApp
 
 ## Getting Started
 
