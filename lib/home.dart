@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
               Container(
                 color: Hexcolor('#E67DDB'),
                 width: double.infinity,
-                height: 2000,
+                height: 1500,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.all(8.0),
                         child: Center(
                           child: Text(
-                            'My Projects',
+                            'My Flutter Projects',
                             style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 90,
@@ -232,7 +232,7 @@ class _HomeState extends State<Home> {
                                     child: Align(
                                       alignment: Alignment.bottomRight,
                                       child: RaisedButton(
-                                        color: Hexcolor('#F9C067'),
+                                        color: Hexcolor('#74535D'),
                                         elevation: 3.0,
                                         child: Text(
                                           'View Source',
@@ -247,6 +247,158 @@ class _HomeState extends State<Home> {
                                                 "https://github.com/ameysunu/newsforcovid.git");
                                           }
                                         },
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                //color: Hexcolor('#E67DDB'),
+                width: double.infinity,
+                height: 1500,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SafeArea(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(
+                          'Work Experience',
+                          style:
+                              TextStyle(fontFamily: 'Poppins', fontSize: 90.0),
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          height: 300.0,
+                          width: 700.0,
+                          child: Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Card(
+                              color: Colors.black,
+                              elevation: 3.0,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
+                                    child: Text(
+                                      'Human Resources Head',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 40,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
+                                    child: Text(
+                                      'Instrument Society of India-VIT Vellore',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                    child: Text(
+                                      'April 2019 - May 2020',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 20,
+                                        color: Colors.white54,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                    child: Text(
+                                      'Managed student recruitments, delegation and any discrepancies in the chapter',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 20,
+                                        color: Colors.white38,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 300.0,
+                          width: 800.0,
+                          child: Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Card(
+                              color: Colors.black,
+                              elevation: 3.0,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
+                                    child: Text(
+                                      'Technical Intern',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 40,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
+                                    child: Text(
+                                      'Computer Revolution(U) Ltd.',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                    child: Text(
+                                      'May 2018 - June 2018',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 20,
+                                        color: Colors.white54,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                    child: Text(
+                                      'Microsoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 20,
+                                        color: Colors.white38,
                                       ),
                                     ),
                                   ),
