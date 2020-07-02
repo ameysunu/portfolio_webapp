@@ -28,59 +28,75 @@ class _HomeState extends State<Home> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               SafeArea(
-                child: Padding(
-                  padding:
-                      const EdgeInsets.fromLTRB(100.0, 100.0, 100.0, 100.0),
-                  child: Column(
-                    children: <Widget>[
-                      SizedBox(
-                        width: 1000,
-                        height: 325,
-                        child: Card(
-                          color: Hexcolor('#8685EF'),
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  'Hey! I am Amey.',
-                                  style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 60.0,
-                                      color: Colors.white),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(10, 25, 10, 0),
-                                  child: Text(
-                                    'I am a final year Computer Science student at VIT University, Vellore, India and an aspiring Flutter Developer for both Mobile and Web Apps.',
-                                    style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 25.0,
-                                        color: Colors.white),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.fromLTRB(
-                                        10, 25, 10, 0),
-                                    child: Text(
-                                      'You can find my resume, projects and my contacts here.',
+                child: Row(
+                  children: <Widget>[
+                    Padding(
+                      padding:
+                          const EdgeInsets.fromLTRB(100.0, 100.0, 100.0, 100.0),
+                      child: Column(
+                        children: <Widget>[
+                          SizedBox(
+                            width: 1000,
+                            height: 325,
+                            child: Card(
+                              color: Hexcolor('#8685EF'),
+                              child: Padding(
+                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      'Hey! I am Amey.',
                                       style: TextStyle(
                                           fontFamily: 'Poppins',
-                                          fontSize: 25.0,
+                                          fontSize: 60.0,
                                           color: Colors.white),
                                     ),
-                                  ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          10, 25, 10, 0),
+                                      child: Text(
+                                        'I am a final year Computer Science student at VIT University, Vellore, India and an aspiring Flutter Developer for both Mobile and Web Apps.',
+                                        style: TextStyle(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 25.0,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            10, 25, 10, 0),
+                                        child: Text(
+                                          'You can find my resume, projects and my contacts here.',
+                                          style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 25.0,
+                                              color: Colors.white),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ],
+                              ),
                             ),
                           ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 300,
+                        width: 300,
+                        child: Card(
+                          color: Colors.transparent,
+                          elevation: 0,
+                          child: Image.asset('images/IMG_2590.jpeg'),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
               Container(
@@ -271,7 +287,7 @@ class _HomeState extends State<Home> {
               ),
               Container(
                 width: double.infinity,
-                height: 500,
+                height: 800,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -285,137 +301,140 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Container(
-                          height: 300.0,
-                          width: 700.0,
-                          child: Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: Colors.black,
-                              elevation: 3.0,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      'Human Resources Head',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 40,
-                                        color: Colors.white,
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 80, 0, 0),
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            height: 300.0,
+                            width: 700.0,
+                            child: Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Card(
+                                color: Colors.black,
+                                elevation: 3.0,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 10, 0, 0),
+                                      child: Text(
+                                        'Human Resources Head',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 40,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      'Instrument Society of India-VIT Vellore',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 20,
-                                        color: Colors.white,
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 10, 0, 0),
+                                      child: Text(
+                                        'Instrument Society of India-VIT Vellore',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 20,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                    child: Text(
-                                      'April 2019 - May 2020',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 20,
-                                        color: Colors.white54,
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 0, 0),
+                                      child: Text(
+                                        'April 2019 - May 2020',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 20,
+                                          color: Colors.white54,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                                    child: Text(
-                                      'Managed student recruitments, delegation and any discrepancies in the chapter',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 20,
-                                        color: Colors.white38,
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
+                                      child: Text(
+                                        'Managed student recruitments, delegation and any discrepancies in the chapter',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 20,
+                                          color: Colors.white38,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        Container(
-                          height: 300.0,
-                          width: 800.0,
-                          child: Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: Colors.black,
-                              elevation: 3.0,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      'Technical Intern',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 40,
-                                        color: Colors.white,
+                          Container(
+                            height: 300.0,
+                            width: 800.0,
+                            child: Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Card(
+                                color: Colors.black,
+                                elevation: 3.0,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 10, 0, 0),
+                                      child: Text(
+                                        'Technical Intern',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 40,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      'Computer Revolution(U) Ltd.',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 20,
-                                        color: Colors.white,
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 10, 0, 0),
+                                      child: Text(
+                                        'Computer Revolution(U) Ltd.',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 20,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                    child: Text(
-                                      'May 2018 - June 2018',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 20,
-                                        color: Colors.white54,
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 0, 0),
+                                      child: Text(
+                                        'May 2018 - June 2018',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 20,
+                                          color: Colors.white54,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                                    child: Text(
-                                      'Microsoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 20,
-                                        color: Colors.white38,
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
+                                      child: Text(
+                                        'Microsoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 20,
+                                          color: Colors.white38,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -423,7 +442,7 @@ class _HomeState extends State<Home> {
               Container(
                 color: Colors.black,
                 width: double.infinity,
-                height: 500,
+                height: 450,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -541,6 +560,24 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ],
+                ),
+              ),
+              Container(
+                height: 100,
+                width: double.infinity,
+                color: Hexcolor('#363636'),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: Text(
+                      'Made with 💖 by Amey on Flutter Web',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
