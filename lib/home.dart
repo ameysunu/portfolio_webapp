@@ -22,8 +22,80 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Hexcolor('#F2ECFF'),
+        elevation: 0,
+        iconTheme: new IconThemeData(
+          color: Hexcolor('#8685EF'),
+        ),
+      ),
+      drawer: Container(
+        width: 1000,
+        child: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 300, 0, 0),
+                child: ListTile(
+                  title: Padding(
+                    padding: const EdgeInsets.fromLTRB(400, 20, 0, 20),
+                    child: Text(
+                      'My Flutter Projects',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  onTap: () {
+                    // Update the state of the app.
+                    // ...
+                    Navigator.pop(context);
+                  },
+                ),
+              ),
+              ListTile(
+                title: Padding(
+                  padding: const EdgeInsets.fromLTRB(400, 20, 0, 20),
+                  child: Text(
+                    'Work Experience',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                onTap: () {
+                  // Update the state of the app.
+                  // ...
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Padding(
+                  padding: const EdgeInsets.fromLTRB(425, 20, 0, 20),
+                  child: Text(
+                    'Contact',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                onTap: () {
+                  // Update the state of the app.
+                  // ...
+                  Navigator.pop(context);
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Container(
+          color: Hexcolor('#F2ECFF'),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
