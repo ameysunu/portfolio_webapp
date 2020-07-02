@@ -570,7 +570,7 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.all(8.0),
                   child: Center(
                     child: Text(
-                      'Made with 💖 by Amey on Flutter Web',
+                      'Made with 💖 by Amey on Flutter',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
