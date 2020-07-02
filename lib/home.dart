@@ -10,6 +10,15 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  _launchURL(String toMailId) async {
+    var url = 'mailto:$toMailId';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -452,9 +461,13 @@ class _HomeState extends State<Home> {
                             child: SizedBox(
                               height: 100.0,
                               width: 100.0,
-                              child: Card(
-                                color: Colors.black,
-                                child: Image.asset('images/email.png'),
+                              child: InkWell(
+                                child: Card(
+                                  color: Colors.black,
+                                  child: Image.asset('images/email.png'),
+                                ),
+                                onTap: () =>
+                                    _launchURL('ameysunu00719@gmail.com'),
                               ),
                             ),
                           ),
@@ -465,9 +478,18 @@ class _HomeState extends State<Home> {
                             child: SizedBox(
                               height: 100.0,
                               width: 100.0,
-                              child: Card(
-                                color: Colors.black,
-                                child: Image.asset('images/linkedin.png'),
+                              child: InkWell(
+                                child: Card(
+                                  color: Colors.black,
+                                  child: Image.asset('images/linkedin.png'),
+                                ),
+                                onTap: () async {
+                                  if (await canLaunch(
+                                      "https://www.linkedin.com/in/amey-sunu-187103171/")) {
+                                    await launch(
+                                        "https://www.linkedin.com/in/amey-sunu-187103171/");
+                                  }
+                                },
                               ),
                             ),
                           ),
@@ -478,9 +500,18 @@ class _HomeState extends State<Home> {
                             child: SizedBox(
                               height: 100.0,
                               width: 100.0,
-                              child: Card(
-                                color: Colors.black,
-                                child: Image.asset('images/facebook.png'),
+                              child: InkWell(
+                                child: Card(
+                                  color: Colors.black,
+                                  child: Image.asset('images/facebook.png'),
+                                ),
+                                onTap: () async {
+                                  if (await canLaunch(
+                                      "https://www.facebook.com/ameysunu.sunu")) {
+                                    await launch(
+                                        "https://www.facebook.com/ameysunu.sunu");
+                                  }
+                                },
                               ),
                             ),
                           ),
@@ -491,9 +522,18 @@ class _HomeState extends State<Home> {
                             child: SizedBox(
                               height: 100.0,
                               width: 100.0,
-                              child: Card(
-                                color: Colors.black,
-                                child: Image.asset('images/github.png'),
+                              child: InkWell(
+                                child: Card(
+                                  color: Colors.black,
+                                  child: Image.asset('images/github.png'),
+                                ),
+                                onTap: () async {
+                                  if (await canLaunch(
+                                      "https://www.github.com/ameysunu")) {
+                                    await launch(
+                                        "https://www.github.com/ameysunu");
+                                  }
+                                },
                               ),
                             ),
                           ),
