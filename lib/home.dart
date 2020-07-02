@@ -261,9 +261,8 @@ class _HomeState extends State<Home> {
                 ),
               ),
               Container(
-                //color: Hexcolor('#E67DDB'),
                 width: double.infinity,
-                height: 1500,
+                height: 500,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -403,6 +402,98 @@ class _HomeState extends State<Home> {
                                     ),
                                   ),
                                 ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.black,
+                width: double.infinity,
+                height: 500,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          'Contact',
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontSize: 90.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          'I would really appreciate, if you would hit me up with any doubts or any task. I\'ll be in touch as soon as I can.',
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(200, 20, 0, 0),
+                            child: SizedBox(
+                              height: 100.0,
+                              width: 100.0,
+                              child: Card(
+                                color: Colors.black,
+                                child: Image.asset('images/email.png'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(200, 20, 0, 0),
+                            child: SizedBox(
+                              height: 100.0,
+                              width: 100.0,
+                              child: Card(
+                                color: Colors.black,
+                                child: Image.asset('images/linkedin.png'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(200, 20, 0, 0),
+                            child: SizedBox(
+                              height: 100.0,
+                              width: 100.0,
+                              child: Card(
+                                color: Colors.black,
+                                child: Image.asset('images/facebook.png'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(200, 20, 0, 0),
+                            child: SizedBox(
+                              height: 100.0,
+                              width: 100.0,
+                              child: Card(
+                                color: Colors.black,
+                                child: Image.asset('images/github.png'),
                               ),
                             ),
                           ),

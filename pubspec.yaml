@@ -50,6 +50,10 @@ flutter:
   assets:
     - images/watered.png
     - images/newsforcovid.png
+    - images/email.png
+    - images/linkedin.png
+    - images/facebook.png
+    - images/github.png
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
